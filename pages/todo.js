@@ -1,4 +1,4 @@
-import {  useState } from 'react'
+import { useState } from 'react'
 import styles from '../styles/Todo.module.css'
 
 console.log('My first todo:')
@@ -9,7 +9,7 @@ console.log('My first todo:')
 // ,[]})
 
 const Todo = ({ login, avatar_url }) => {
-   
+
     const [tasks, setTasks] = useState([
         { id: 1, name: 'Do homework' },
         { id: 2, name: 'Read book' }])
@@ -20,7 +20,7 @@ const Todo = ({ login, avatar_url }) => {
     const renderTask = () => {
 
         if (tasks != null) {
-            
+
             return tasks.map((task, index) => (
                 <li key={index} className={styles.card}>
                     <div className={styles.name}>
@@ -98,12 +98,12 @@ const Todo = ({ login, avatar_url }) => {
             <ul className={styles.list}>{renderTask()}</ul>
 
         </div >
-        
+
     )
 }
 
 Todo.getInitialProps = async (ctx) => {
-    
+
     const res = await fetch('https://api.github.com/users/wwarodom')
     const json = await res.json()
     return { login: json.login, avatar_url: json.avatar_url }
