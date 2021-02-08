@@ -1,14 +1,10 @@
 .container {
     min-height: 100vh;
-<<<<<<< HEAD
-=======
     padding: 0 0.5rem;
->>>>>>> be6db4ec482464277b494a761377574d5a0c2912
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
     border: 20px solid green;
 }
 
@@ -91,7 +87,6 @@
     display: inline-block;
     font-size: 16px;
     border-radius: 10px;
-=======
     border: 10px solid blue;
 }
 
@@ -167,5 +162,4 @@
 
 .topRight:hover {
     color: red;
->>>>>>> be6db4ec482464277b494a761377574d5a0c2912
 }
