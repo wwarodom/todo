@@ -1,8 +1,5 @@
 import Head from 'next/head'
-<<<<<<< HEAD
-=======
 import Link from 'next/link'
->>>>>>> be6db4ec482464277b494a761377574d5a0c2912
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -24,7 +21,7 @@ export default function Home() {
         </p>
  
         <p className={styles.description}>
-           <Link href="/todo"><a>Todo with git Integration</a></Link>
+           <Link href="/todo"><a>Todo with git Integration!!!</a></Link>
            
         </p>
 
