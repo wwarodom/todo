@@ -1,4 +1,8 @@
 import Head from 'next/head'
+<<<<<<< HEAD
+=======
+import Link from 'next/link'
+>>>>>>> be6db4ec482464277b494a761377574d5a0c2912
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -18,11 +22,10 @@ export default function Home() {
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
-
-        <p>
-          <Link href="/todo">
-              <a>Todo with git integration</a>
-          </Link>
+ 
+        <p className={styles.description}>
+           <Link href="/todo"><a>Todo with git Integration</a></Link>
+           
         </p>
 
         <div className={styles.grid}>
